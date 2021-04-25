@@ -44,6 +44,10 @@ function setup() {
   // Directional Light creation
   createDirectionalLight(scene);
 
+  // Create cube
+  const cube = cubeCreation(2, 2, 2, 0xffffff);
+  scene.add(cube);
+
   return {
     scene,
     //  canvas,

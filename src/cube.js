@@ -1,10 +1,11 @@
 import { BoxBufferGeometry, MeshBasicMaterial, Mesh } from "three";
 
-function cube(scene) {
-  const geometry = new BoxBufferGeometry(1, 1, 1);
-  const material = new MeshBasicMaterial({ color: 0xffffff });
+function cube(width, height, depth, color) {
+  const geometry = new BoxBufferGeometry(width, height, depth);
+  const material = new MeshBasicMaterial({ color: color });
   const cube = new Mesh(geometry, material);
-  scene.add(cube);
+  console.log(cube);
+  return cube;
 }
 
 export default cube;
